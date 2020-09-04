@@ -33,18 +33,25 @@ $(document).ready(function(){
     // funzione per inserire i numeri dell'utente + il setTimeout di 30 secondi per far comparire il prompt
     setTimeout(function(){
         var numUtente = [];
+        var listaUtente = [];
         var maxNumUtente = 5;
 
         for(var i = 0; i < maxNumUtente; i++){
             numUtente.push(parseInt(prompt("Inserisci un numero")));
+            listaUtente.push(numUtente);
+            console.log(listaUtente[i]);
         }
-
-
-
-
     }, 3000);
 
+    //
 
+    // Una volta inseriti i 5 numeri, il software dice quanti e quali numeri sono stati ricordati.
+
+        // creo variabili per quantità e quali numeri esatti sono stati inseriti
+        var quantNum = 0;
+        var numEsatti = [];
+            
+      // metodo includes ( verifica se una stringa ne contiene un altra desiderata restituendo true o false in base alla ricerca)
 
 
 
